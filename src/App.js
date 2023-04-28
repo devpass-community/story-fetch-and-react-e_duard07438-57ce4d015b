@@ -11,7 +11,7 @@ function App() {
     // TODO
     const response = await fetch('https://meowfacts.herokuapp.com/')
     const data = await response.json()
-    setQuote(data)
+    setQuote(data.fact)
     setIsLoading(false)
   }
 
